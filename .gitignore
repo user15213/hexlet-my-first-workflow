@@ -1,0 +1,5 @@
+.cursor/
+.vscode/
+AppData/
+node_modules/
+*.log

@@ -1,0 +1,20 @@
+name: Hello World Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Make
+        run: sudo apt-get install -y make
+
+      - name: Run Hello World
+        run: make say-hello
